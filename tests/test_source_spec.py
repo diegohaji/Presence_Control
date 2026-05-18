@@ -139,7 +139,7 @@ def test_cli_open_failure_returns_clear_error(tmp_path, monkeypatch, capsys):
     config_path.write_text("[video]\nsource = \"\"\n[line]\npoint_a = [0.25, 0.5]\npoint_b = [0.75, 0.5]\nentry_direction = \"A_TO_B\"\n[display]\n", encoding="utf-8")
 
     monkeypatch.setattr(cli, "select_source", lambda: "webcam:999")
-    monkeypatch.setattr(cli, "open_capture", lambda spec: (_ for _ in ()).throw(VideoSourceError("fallback retry message")))
+    monkeypatch.setattr(cli, "run", lambda settings: (_ for _ in ()).throw(VideoSourceError("fallback retry message")))
 
     exit_code = cli.main(["--config", str(config_path)])
 

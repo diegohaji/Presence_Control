@@ -31,6 +31,12 @@ Use a custom configuration file:
 python -m presence_control --config config.toml
 ```
 
+Use a local video file:
+
+```bash
+python -m presence_control --source videos/sample.mp4
+```
+
 The first run creates `config.toml` if it does not exist. Edit `[line]` to adjust normalized coordinates and the entry direction:
 
 ```toml

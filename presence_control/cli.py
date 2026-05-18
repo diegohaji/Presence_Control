@@ -5,8 +5,9 @@ from collections.abc import Sequence
 import sys
 
 from presence_control.config import DEFAULT_CONFIG_PATH, AppConfig, load_config, with_video_source
+from presence_control.runner import run
 from presence_control.source_selector import select_source
-from presence_control.video_source import VideoSourceError, open_capture, parse_source_spec
+from presence_control.video_source import VideoSourceError
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -42,9 +43,7 @@ def resolve_runtime_settings(argv: list[str] | None = None) -> AppConfig:
 def main(argv: Sequence[str] | None = None) -> int:
     try:
         settings = resolve_runtime_settings(list(argv) if argv is not None else None)
-        capture = open_capture(parse_source_spec(settings.video.source))
-        capture.release()
-        return 0
+        return run(settings)
     except (VideoSourceError, ValueError) as exc:
         print(f"Error: {exc}", file=sys.stderr)
         return 1
