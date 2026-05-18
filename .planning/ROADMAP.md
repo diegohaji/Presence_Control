@@ -22,6 +22,15 @@ The roadmap builds the counter as a working vertical slice first: video input an
 4. Line endpoints and direction can be configured and reused from a config file.
 5. FPS or processing status is visible while the app runs.
 
+**Plans:**
+- **Wave 1:** `01-01` - Project scaffold, TOML config, default `config.toml`, and CLI override precedence.
+- **Wave 2 (blocked on Wave 1 completion):** `01-02` - Webcam/file source parsing, interactive source selection, and OpenCV capture errors.
+- **Wave 3 (blocked on Waves 1-2 completion):** `01-03` - Frame runner, virtual line overlay, direction marker, FPS/status display.
+
+**Cross-cutting constraints:**
+- CLI/config behavior must preserve discuss decisions D-01 through D-13.
+- No person detection, tracking, segmentation, counting, or CSV event logging belongs in Phase 1.
+
 ### Phase 2: Person Observation Pipeline
 **Goal:** User can run model inference and receive normalized person observations from each frame.
 **Mode:** mvp
