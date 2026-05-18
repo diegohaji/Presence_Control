@@ -10,13 +10,13 @@
 - [x] **VID-01**: User can run the counter using a webcam source.
 - [x] **VID-02**: User can run the counter using a local video file.
 - [x] **VID-03**: User receives a clear error when the selected video source cannot be opened.
-- [ ] **VID-04**: User can see live frames with current FPS or processing status.
+- [x] **VID-04**: User can see live frames with current FPS or processing status.
 
 ### Calibration
 
 - [x] **CAL-01**: User can configure a virtual line using two frame coordinates.
 - [x] **CAL-02**: User can configure which crossing direction means entry and which means exit.
-- [ ] **CAL-03**: User can see the virtual line and direction marker overlaid on the video.
+- [x] **CAL-03**: User can see the virtual line and direction marker overlaid on the video.
 - [x] **CAL-04**: User can reuse line and runtime settings through a config file.
 
 ### Person Observation
@@ -87,10 +87,10 @@
 | VID-01 | Phase 1 | Complete |
 | VID-02 | Phase 1 | Complete |
 | VID-03 | Phase 1 | Complete |
-| VID-04 | Phase 1 | Pending |
+| VID-04 | Phase 1 | Complete |
 | CAL-01 | Phase 1 | Complete |
 | CAL-02 | Phase 1 | Complete |
-| CAL-03 | Phase 1 | Pending |
+| CAL-03 | Phase 1 | Complete |
 | CAL-04 | Phase 1 | Complete |
 | OBS-01 | Phase 2 | Pending |
 | OBS-02 | Phase 2 | Pending |
