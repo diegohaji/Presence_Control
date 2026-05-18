@@ -14,10 +14,10 @@
 
 ### Calibration
 
-- [ ] **CAL-01**: User can configure a virtual line using two frame coordinates.
-- [ ] **CAL-02**: User can configure which crossing direction means entry and which means exit.
+- [x] **CAL-01**: User can configure a virtual line using two frame coordinates.
+- [x] **CAL-02**: User can configure which crossing direction means entry and which means exit.
 - [ ] **CAL-03**: User can see the virtual line and direction marker overlaid on the video.
-- [ ] **CAL-04**: User can reuse line and runtime settings through a config file.
+- [x] **CAL-04**: User can reuse line and runtime settings through a config file.
 
 ### Person Observation
 
@@ -88,10 +88,10 @@
 | VID-02 | Phase 1 | Pending |
 | VID-03 | Phase 1 | Pending |
 | VID-04 | Phase 1 | Pending |
-| CAL-01 | Phase 1 | Pending |
-| CAL-02 | Phase 1 | Pending |
+| CAL-01 | Phase 1 | Complete |
+| CAL-02 | Phase 1 | Complete |
 | CAL-03 | Phase 1 | Pending |
-| CAL-04 | Phase 1 | Pending |
+| CAL-04 | Phase 1 | Complete |
 | OBS-01 | Phase 2 | Pending |
 | OBS-02 | Phase 2 | Pending |
 | OBS-03 | Phase 2 | Pending |
