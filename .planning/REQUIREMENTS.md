@@ -7,9 +7,9 @@
 
 ### Video Input
 
-- [ ] **VID-01**: User can run the counter using a webcam source.
-- [ ] **VID-02**: User can run the counter using a local video file.
-- [ ] **VID-03**: User receives a clear error when the selected video source cannot be opened.
+- [x] **VID-01**: User can run the counter using a webcam source.
+- [x] **VID-02**: User can run the counter using a local video file.
+- [x] **VID-03**: User receives a clear error when the selected video source cannot be opened.
 - [ ] **VID-04**: User can see live frames with current FPS or processing status.
 
 ### Calibration
@@ -84,9 +84,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| VID-01 | Phase 1 | Pending |
-| VID-02 | Phase 1 | Pending |
-| VID-03 | Phase 1 | Pending |
+| VID-01 | Phase 1 | Complete |
+| VID-02 | Phase 1 | Complete |
+| VID-03 | Phase 1 | Complete |
 | VID-04 | Phase 1 | Pending |
 | CAL-01 | Phase 1 | Complete |
 | CAL-02 | Phase 1 | Complete |
