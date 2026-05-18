@@ -9,7 +9,7 @@ from presence_control.config import DEFAULT_CONFIG_TOML, load_config
 def test_missing_default_config_is_generated(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
 
-    config = resolve_runtime_settings([])
+    config = load_config()
 
     generated = tmp_path / "config.toml"
     assert generated.exists()
