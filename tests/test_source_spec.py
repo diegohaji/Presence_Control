@@ -62,13 +62,14 @@ def test_failed_open_raises_with_retry_guidance(monkeypatch):
 
 
 def test_open_capture_uses_file_path(monkeypatch):
-    fake_cv2 = FakeCv2({"videos/test.mp4": True})
+    video_path = Path("videos/test.mp4")
+    fake_cv2 = FakeCv2({str(video_path): True})
     monkeypatch.setattr("presence_control.video_source.cv2", fake_cv2)
 
-    capture = open_capture(SourceSpec(kind="file", value=Path("videos/test.mp4"), raw="videos/test.mp4"))
+    capture = open_capture(SourceSpec(kind="file", value=video_path, raw="videos/test.mp4"))
 
     assert capture.isOpened()
-    assert fake_cv2.captures[0][0] == "videos/test.mp4"
+    assert fake_cv2.captures[0][0] == str(video_path)
 
 
 def test_webcam_probe_releases_every_capture(monkeypatch):

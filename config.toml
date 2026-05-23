@@ -1,0 +1,11 @@
+[video]
+source = ""
+
+[line]
+point_a = [0.25, 0.50]
+point_b = [0.75, 0.50]
+entry_direction = "A_TO_B"
+
+[display]
+window_name = "Presence Control"
+show_fps = true
