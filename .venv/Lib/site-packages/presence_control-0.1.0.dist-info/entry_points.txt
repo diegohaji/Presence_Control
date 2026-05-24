@@ -1,0 +1,2 @@
+[console_scripts]
+presence-control = presence_control.cli:main
